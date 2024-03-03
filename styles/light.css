@@ -1,12 +1,38 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+:root .theme_light {
+  --main-font: "IBM Plex Mono", bold regular;
+  --size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  /* --Светлые--*/
+  --header-rec-display: none;
+  --head-color: #ffc2e6;
+  --content-text: #353430;
+  --back-line-color: #ff8dcb;
+  --text-header-color: #353430;
+  --button-color: #353430;
+  --rectangle-color: #353430;
+  --page-background-image: url("../images/cover-image-light.png");
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-font: "IBM Plex Mono", bold regular;
+    --size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    /*--Светлая--*/
+    --header-rec-display: none;
+    --head-color: #ffc2e6;
+    --content-text: #353430;
+    --back-line-color: #ff8dcb;
+    --text-header-color: #353430;
+    --button-color: #353430;
+    --rectangle-color: #353430;
+    --page-background-image: url("../images/cover-image-light.png");
+  }
+}
 
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  background-image: var(--page-background-image);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
