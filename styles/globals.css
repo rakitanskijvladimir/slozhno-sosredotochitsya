@@ -6,11 +6,9 @@
   box-sizing: border-box;
 }
 
-body {
-  min-inline-size: 375px;
-  max-inline-size: 1440px;
-  margin: 0 auto;
-}
+/* body {
+  margin: 0;
+} */
 
 h1,
 h2,
