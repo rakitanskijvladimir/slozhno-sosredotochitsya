@@ -1,0 +1,21 @@
+/*
+  Переменные для вашего проекта
+  и их переопределение под различные устройства
+*/
+
+:root {
+  --main-font: "IBM Plex Mono", bold regular;
+  --size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+  /* <--Тёмные--> */
+  --back-line-color-dark: #ff0070;
+  --head-color-dark: #db00ff;
+  --text-color-dark: #000028;
+  --content-text-dark: #f1b2ce; 
+ /* --Светлые--*/
+ --text-line-header-light:  #353430;
+ --head-color-light: #FFC2E6; 
+ --back-text-color-light: #FF8DCB;
+
+} 
+

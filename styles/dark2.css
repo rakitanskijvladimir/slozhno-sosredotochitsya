@@ -1,0 +1,325 @@
+/*
+  Специально для тёмной темы при наличии класса,
+  здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+:root.theme_dark {
+  --main-font: "IBM Plex Mono", bold regular;
+  --size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+   /* <--Тёмные--> */
+   --back-line-color-dark: #ff0070;
+   --head-color-dark: #db00ff;
+   --text-color-dark: #000028;
+   --content-text-dark: #f1b2ce; 
+}
+
+.page.theme_dark {
+  background-image: url("../images/cover-image-dark.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* сохраните этот селектор в приведённом виде.
+    Так стили написанные ниже будут иметь больший вес,
+    чем стили в медиазапросе предпочтений пользователя
+  */
+}
+
+.theme_dark .header_rec {
+  color: var(--back-line-color-dark);
+}
+
+.theme_dark .header_rectangle-rigth {
+  border-top: 1px solid var(--back-line-color-dark);
+  border-right: 1px solid var(--back-line-color-dark);
+}
+
+.theme_dark .header_rectangle-left {
+  border-bottom: 1px solid var(--back-line-color-dark);
+  border-left: 1px solid var(--back-line-color-dark);
+}
+
+.theme_dark .header__theme-menu-item {
+  color: var(--back-line-color-dark);
+}
+
+.theme_dark .header__theme-menu-button_type_dark {
+  outline: 1px solid var(--back-line-color-dark);
+}
+
+.theme_dark .header__theme-menu-button_type_light:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  outline: 1px solid var(--back-line-color-dark);
+}
+
+.theme_dark .header__theme-menu-button_type_auto:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  outline: 1px solid var(--back-line-color-dark);
+}
+
+.theme_dark .header__theme-menu-button_type_dark:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  outline: 1px solid var(--back-line-color-dark);
+}
+
+.theme_dark .header__theme-menu-button:focus {
+  outline: none;
+  opacity: 1;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.theme_dark .header__theme-menu-button:focus-visible {
+  border: none;
+  outline: 1px solid var(--back-line-color-dark);
+}
+
+.theme_dark .header_title {
+  color: var(--head-color-dark);
+  text-shadow: 4px 4px 0px var(--back-line-color-dark);
+}
+
+.theme_dark .header_text-decor {
+  color: var(--text-color-dark);
+  background-color: var(--back-line-color-dark);
+}
+
+.theme_dark .content_block-header {
+  color: var(--back-line-color-dark);
+}
+
+.theme_dark .content_block-subheader {
+  color: var(--text-color-dark);
+  background-color: var(--back-line-color-dark);
+}
+
+.theme_dark .content_block-subheader-subtitle {
+  color: var(--text-color-dark);
+  background-color: var(--back-line-color-dark);
+}
+
+.theme_dark .content_block-text {
+  color: var(--content-text-dark);
+}
+
+.theme_dark .word {
+  text-shadow: 2px 2px 0px var(--back-line-color-dark);
+}
+
+.theme_dark .word:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  color: var(--content-text-dark);
+}
+
+.theme_dark .word:focus {
+  text-decoration: none;
+  outline: 1px solid var(--content-text-dark);
+  color: var(--content-text-dark);
+}
+
+.theme_dark .word:focus-visible {
+  text-decoration: none;
+  outline: 1px solid var(--content-text-dark);
+  color: var(--content-text-dark);
+}
+
+.theme_dark .footer_title {
+  color: var(--head-color-dark);
+  text-shadow: 2px 2px 0px var(--back-line-color-dark);
+}
+
+.theme_dark .footer_rectangle-rigth {
+  border: 1px solid var(--back-line-color-dark);
+  border-left: none;
+  border-bottom: none;
+}
+
+.theme_dark .footer_rectangle-left {
+  border: 1px solid var(--back-line-color-dark);
+  border-top: none;
+  border-right: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-font: "IBM Plex Mono", bold regular;
+    --size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+          /*--Темная--*/
+   --back-line-color-dark: #ff0070;
+   --head-color-dark: #db00ff;
+   --text-color-dark: #000028;
+   --content-text-dark: #f1b2ce; 
+  }
+}
+
+.page.theme_dark {
+  background-image: url("../images/cover-image-dark.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.theme_dark .header_rec {
+  color: var(--back-line-color-dark);
+}
+
+.theme_dark .header_rectangle-rigth {
+  border-top: 1px solid var(--back-line-color-dark);
+  border-right: 1px solid var(--back-line-color-dark);
+}
+
+.theme_dark .header_rectangle-left {
+  border-bottom: 1px solid var(--back-line-color-dark);
+  border-left: 1px solid var(--back-line-color-dark);
+}
+
+.theme_dark .header__theme-menu-item {
+  color: var(--back-line-color-dark);
+}
+
+.theme_dark .header__theme-menu-button_type_dark {
+  outline: 1px solid var(--back-line-color-dark);
+}
+
+.theme_dark .header__theme-menu-button_type_auto {
+  outline: none;
+  opacity: 1;
+}
+
+.theme_dark .header__theme-menu-button_type_light:hover {
+  cursor: pointer;
+  outline: 1px solid var(--back-line-color-dark);
+}
+
+.theme_dark .header__theme-menu-button_type_auto:hover {
+  cursor: pointer;
+  outline: 1px solid var(--back-line-color-dark);
+}
+
+.theme_dark .header__theme-menu-button_type_dark:hover {
+  cursor: pointer;
+  outline: 1px solid var(--back-line-color-dark);
+}
+
+.theme_dark .header__theme-menu-button:focus {
+  outline: none;
+  opacity: 1;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.theme_dark .header__theme-menu-button:focus-visible {
+  border: none;
+  opacity: 0.5;
+  outline: 1px solid var(--back-line-color-dark);
+}
+
+.theme_dark .header_title {
+  color: var(--head-color-dark);
+  text-shadow: 4px 4px 0px var(--back-line-color-dark);
+}
+
+.theme_dark .header_text-decor {
+  color: var(--text-color-dark);
+  background-color: var(--back-line-color-dark);
+}
+
+.theme_dark .content_block-header-first {
+  color: var(--back-line-color-dark);
+}
+
+.theme_dark .content_block-header-second {
+  color: var(--back-line-color-dark);
+}
+
+.theme_dark .content_block-header-third {
+  color: var(--back-line-color-dark);
+}
+
+.theme_dark .content_block-subheader-first {
+  color: var(--text-color-dark);
+  background-color: var(--back-line-color-dark);
+}
+
+.theme_dark .content_block-subheader-second {
+  color: var(--text-color-dark);
+  background-color: var(--back-line-color-dark);
+}
+
+.theme_dark .content_block-subheader-third {
+  color: var(--text-color-dark);
+  background-color: var(--back-line-color-dark);
+}
+
+.theme_dark .content_block-subheader-fourth {
+  color: var(--text-color-dark);
+  background-color: var(--back-line-color-dark);
+}
+
+.theme_dark .content_block-subheader-subtitle {
+  color: var(--text-color-dark);
+  background-color: var(--back-line-color-dark);
+}
+
+.theme_dark .content_block-text-first {
+  color: var(--content-text-dark);
+}
+
+.theme_dark .content_block-text-second {
+  color: var(--content-text-dark);
+}
+
+.theme_dark .content_block-text-third {
+  color: var(--content-text-dark);
+}
+
+.theme_dark .content_block-text-third-footer {
+  color: var(--content-text-dark);
+}
+
+.theme_dark .word {
+  text-shadow: 2px 2px 0px var(--back-line-color-dark);
+}
+
+.theme_dark .word:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  color: var(--content-text-dark);
+}
+
+.theme_dark .word:focus {
+  text-decoration: none;
+  outline: 1px solid var(--content-text-dark);
+  color: var(--content-text-dark);
+}
+
+.theme_dark .word:focus-visible {
+  text-decoration: none;
+  outline: 1px solid var(--content-text-dark);
+  color: var(--content-text-dark);
+}
+
+.theme_dark .footer_title {
+  color: var(--head-color-dark);
+  text-shadow: 2px 2px 0px var(--back-line-color-dark);
+}
+
+.theme_dark .footer_rectangle-rigth {
+  border: 1px solid var(--back-line-color-dark);
+  border-left: none;
+  border-bottom: none;
+}
+
+.theme_dark .footer_rectangle-left {
+  border: 1px solid var(--back-line-color-dark);
+  border-top: none;
+  border-right: none;
+}  
