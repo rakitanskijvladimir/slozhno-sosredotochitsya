@@ -1,5 +1,4 @@
 :root .theme_light {
-  --main-font: "IBM Plex Mono", bold regular;
   --size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   /* --Светлые--*/
@@ -9,15 +8,15 @@
   --content-text: #353430;
   --back-line-color: #ff8dcb;
   --button-color: #353430;
-  --button-hover: rgba(53, 52, 48, 0.5);
+  --button-hover: rgba(53, 52, 48, 0.4);
   --text-color-header: #353430;
   --rectangle-color: #353430;
   --page-background-image: url("../images/cover-image-light.png");
+  --reserv-color: #ffeef7;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --main-font: "IBM Plex Mono", bold regular;
     --size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     --size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     /*--Светлая--*/
@@ -27,10 +26,11 @@
     --content-text: #353430;
     --back-line-color: #ff8dcb;
     --button-color: #353430;
-    --button-hover: rgba(53, 52, 48, 0.5);
+    --button-hover: rgba(53, 52, 48, 0.4);
     --text-color-header: #353430;
     --rectangle-color: #353430;
     --page-background-image: url("../images/cover-image-light.png");
+    --reserv-color: #ffeef7;
   }
 }
 
