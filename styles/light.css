@@ -3,7 +3,7 @@
   --size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   /* --Светлые--*/
   --header-rec-display: none;
-  --header-rec-color: #353430;
+  --header-rec-color: #ff0070;
   --head-color: #ffc2e6;
   --content-text: #353430;
   --back-line-color: #ff8dcb;
